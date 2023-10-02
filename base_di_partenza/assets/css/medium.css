@@ -30,8 +30,13 @@ body{
     font-weight: 400;
     height: 75px;
     z-index: 10;
+    transition:background-color 0.4s linear;
     
 }
+.scrolledNav{
+    background-color: white;
+}
+
 .nav{
     display:flex;
     justify-content: center;
@@ -85,11 +90,11 @@ body{
     line-height: 20px;
     color: rgb(36, 36, 36);
 }
-.start-button{
+.start-button-container{
     display: flex;
     height: 38px;
 }
-.start-button button{
+.start-button{
     display: flex;
     text-align: center;
     align-items: flex-start;
@@ -106,6 +111,11 @@ body{
     color: rgb(255, 255, 255);
     font-size: 14px;
     line-height: 20px;
+   transition: all 0.4s linear;
+}
+.scrolledButton {
+    background-color: #1a8917;
+    border-color: #1a8917;
 }
 .blocco{
     display: block;
@@ -202,7 +212,9 @@ main{
         flex-direction: column;
 }
 .main-container{
-   
+border-bottom: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(0, 0, 0, 0.05);
 }
 
 .trend-container1{
